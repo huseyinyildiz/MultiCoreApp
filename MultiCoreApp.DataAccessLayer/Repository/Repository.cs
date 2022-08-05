@@ -18,6 +18,8 @@ namespace MultiCoreApp.DataAccessLayer.Repository
         public Repository(MultiDbContext db)
         {
             _db = db;
+            //_dbSet = db.Set<T>();
+            //_dbSet = dbSet;
             _dbSet = db.Set<T>();
         }
         public async Task<T> GetByIdAsync(Guid id)
